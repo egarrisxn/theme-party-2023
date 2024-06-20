@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+}
+
+[data-theme="theme-dark"] {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+}
+
+[data-theme="theme-light"] {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
