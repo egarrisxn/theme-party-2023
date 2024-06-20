@@ -8,7 +8,8 @@ _Explore, mix, and match themes in this dynamic theme playground powered by Vite
 
 Vite Theme Party is a versatile theme playground application that allows you to experiment with different themes and see how they interact with each other. Built using Vite for fast development, HTML5, CSS3, and JavaScript, it offers an interactive environment where you can switch between various themes seamlessly.
 
-Explore the repository: [Vite Theme Party Repository](https://github.com/egarrisxn/vite-theme-party)
+Explore the repository: [Vite Theme Party Repository](https://github.com/egarrisxn/vite-theme-party)<br/>
+Test it out for yourself: [Vite Theme Party Live Demo](https://github.com/egarrisxn/vite-theme-party)
 
 ## Technologies Used
 
@@ -62,6 +63,3 @@ Questions? Reach out to me via:
 - **GitHub:** [https://github.com/egarrisxn](https://github.com/egarrisxn)
 
 - **Email:** egarrisxn@gmail.com
-
-
-### ***HEY, YOU! YEAH..YOU!! LET'S PARTY!!!***
