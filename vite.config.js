@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/',
+  base: '/vite-theme-party',
   css: {
     postcss: './postcss.config.cjs'
   }
