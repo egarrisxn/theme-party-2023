@@ -4,28 +4,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vite Test</title>
-  <link rel="icon" type="image/png" href="/images/favicon.png" />
-  <link rel="stylesheet" href="/style.css">
-  <script src="/main.js" type="module"></script>
+  <!-- Title -->
+  <title>Custom Themes | Vite</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Preconnect hints for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Link to Roboto font with specific weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Link to external JavaScript file -->
+  <script src="./main.js" type="module"></script>
 </head>
 
-<body class="theme-light">
-  <div>
-    <label>
-      <input type="radio" name="theme" value="theme-light" checked>
-      Light Theme
-    </label>
-    <label>
-      <input type="radio" name="theme" value="theme-dark">
-      Dark Theme
-    </label>
+<body>
+  <!-- Banner with custom background color -->
+  <div class="banner" data-bkg="accent2"></div>
+  <div class="wrapper">
+    <header class="hero">
+      <div data-align="right">
+        <!-- Greeting emoji -->
+        <p data-fs="2xl">👋</p>
+        <div>
+          <!-- Text with primary color -->
+          <p>I am into <span data-color="primary">design</span></p>
+          <!-- Text with accent2 color -->
+          <p data-color="accent2">web development</p>
+          <!-- Text with accent1 color -->
+          <p data-color="accent1">& learning</p>
+        </div>
+      </div>
+      <div>
+        <img src="/images/hero.png" alt="hero" class="hero" width="280px">
+        <!-- Main heading with primary color -->
+        <h1 data-color="primary">Hello, World.</h1>
+        <!-- Welcome message -->
+        <p>Welcome to theme page.</p>
+      </div>
+    </header>
+    <main>
+      <!-- Background image -->
+      <img src="/images/bg.png" alt="bg" class="bg">
+      <aside class="container" aria-label="Settings section">
+        <div class="settings-wrapper">
+          <!-- Settings section heading -->
+          <h2 class="h3">Custom Site Settings</h2>
+          <div class="settings">
+            <div class="stack">
+              <!-- Toggle switches for various settings -->
+              <div class="switch-wrapper">
+                <input type="checkbox" id="sound" name="sound">
+                <label for="sound" class="switch-label">Toggle Sound</label>
+                <div class="switch">
+                  <span>Sound Off</span>
+                  <div class="thumb"></div>
+                  <span>Sound On</span>
+                </div>
+              </div>
+              <div class="switch-wrapper">
+                <input type="checkbox" id="motion" name="motion">
+                <label for="motion" class="switch-label">Toggle Motion</label>
+                <div class="switch">
+                  <span>Motion Off</span>
+                  <div class="thumb"></div>
+                  <span>Motion On</span>
+                </div>
+              </div>
+              <div class="switch-wrapper">
+                <input type="checkbox" id="round" name="round">
+                <label for="round" class="switch-label">Toggle Round</label>
+                <div class="switch">
+                  <span>Squared</span>
+                  <div class="thumb"></div>
+                  <span>Rounded</span>
+                </div>
+              </div>
+            </div>
+            <div class="stack">
+              <!-- Radio buttons for selecting website theme -->
+              <fieldset class="radio-wrapper">
+                <legend>Website Theme</legend>
+                <div class="radio">
+                  <input type="radio" name="theme" id="system">
+                  <div class="check"></div>
+                  <label for="system">System</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="theme" id="light">
+                  <div class="check"></div>
+                  <label for="light">Light</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="theme" id="dark">
+                  <div class="check"></div>
+                  <label for="dark">Dark</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="theme" id="retro">
+                  <div class="check"></div>
+                  <label for="retro">Retro</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="theme" id="neon">
+                  <div class="check"></div>
+                  <label for="neon">Neon</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="theme" id="modern">
+                  <div class="check"></div>
+                  <label for="modern">Modern</label>
+                </div>
+              </fieldset>
+              <!-- Radio buttons for selecting custom accent color -->
+              <fieldset class="radio-wrapper">
+                <legend>Custom Accent</legend>
+                <div class="radio">
+                  <input type="radio" name="customColor" id="primary">
+                  <div class="check"></div>
+                  <label for="primary">Option 1</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="customColor" id="accent1">
+                  <div class="check"></div>
+                  <label for="accent1">Option 2</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="customColor" id="accent2">
+                  <div class="check"></div>
+                  <label for="accent2">Option 3</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
   </div>
-  <div>
-    <input type="checkbox" id="custom-checkbox">
-    <label for="custom-checkbox">Toggle Theme</label>
-  </div>
-  <button id="theme-switch">Switch Theme</button>
+  <!-- Banner with another custom background color -->
+  <div class="banner" data-bkg="primary"></div>
+  <!-- Audio elements for sound effects -->
+  <audio src="/sounds/check.mp3" id="audio-check" preload="none"></audio>
+  <audio src="/sounds/toggle.mp3" id="audio-toggle" preload="none"></audio>
 </body>
 
 </html>
