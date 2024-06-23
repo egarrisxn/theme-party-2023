@@ -1,7 +1,7 @@
 //! Sounds & Selectors
-// Selecting all checkboxes and radios under .settings
-const toggles = document.querySelectorAll(".settings [type='checkbox']");
-const radios = document.querySelectorAll(".settings [type='radio']");
+// Selecting all checkboxes and radios under .playground
+const toggles = document.querySelectorAll(".playground [type='checkbox']");
+const radios = document.querySelectorAll(".playground [type='radio']");
 
 // Selecting audio elements
 const audioCheck = document.querySelector("#audio-check");
@@ -13,19 +13,19 @@ const doc = document.documentElement;
 // Variable to store whether audio should be played
 let isAudioPlayable;
 
-//! Theme Settings
-// Array of settings with their default values
-const settings = [
+//! Theme Playground
+// Array of playground with their default values
+const playground = [
   { key: "sound", default: "false" },
-  { key: "motion", default: "false" },
-  { key: "round", default: "false" },
+  { key: "motion", default: "true" },
+  { key: "round", default: "true" },
   { key: "theme", default: "system" },
-  { key: "customColor", default: "primary" },
+  { key: "accent", default: "accent3" },
 ];
 
 //! Functions
-// Update UI based on settings
-function updateSettingsUi({ name, value }) {
+// Update UI based on playground
+function updatePlaygroundUi({ name, value }) {
   // For boolean toggles (checkboxes)
   if (value === "true" || value === "false") {
     const checkbox = document.querySelector(`[name="${name}"]`);
@@ -39,11 +39,11 @@ function updateSettingsUi({ name, value }) {
   }
 }
 
-// Update site UI (DOM) based on settings
+// Update site UI (DOM) based on playground
 function updateSiteUi({ name, value }) {
-  if (name === "customColor") {
+  if (name === "accent") {
     // Setting custom CSS variable for color
-    doc.style.setProperty("--customColor", `var(--${value})`);
+    doc.style.setProperty("--accent", `var(--${value})`);
   } else {
     // Setting data attribute on document element
     doc.dataset[name] = value;
@@ -60,12 +60,12 @@ function playAudio(type) {
 }
 
 //! Event Listeners
-// When the window is loaded, initialize settings from localStorage or defaults
+// When the window is loaded, initialize playground from localStorage or defaults
 window.addEventListener("DOMContentLoaded", () => {
-  settings.forEach((setting) => {
+  playground.forEach((setting) => {
     const value = localStorage.getItem(setting.key) ?? setting.default;
     updateSiteUi({ name: setting.key, value });
-    updateSettingsUi({ name: setting.key, value });
+    updatePlaygroundUi({ name: setting.key, value });
     // Set audio playability based on sound setting
     if (setting.key === "sound") {
       isAudioPlayable = value === "true";
