@@ -11,6 +11,8 @@ Vite Theme Party is a versatile theme playground application that allows you to 
 Explore the repository: [Vite Theme Party Repository](https://github.com/egarrisxn/vite-theme-party)<br/>
 Test it out for yourself: [Vite Theme Party Live Demo](https://vite-theme-party.netlify.app/)
 
+![theme-party](https://github.com/egarrisxn/vite-theme-party/assets/126130230/6379e181-67d9-4b1d-89dc-6c249586defa)
+
 ## Technologies Used
 
 - **Vite:** A blazingly fast, modern, and intuitive frontend tool.
