@@ -1,20 +1,20 @@
 {
   "name": "vite-theme-party",
-  "description": "A custom theme selector with Vite.",
+  "description": "Get creative with yout theme!",
   "version": "1.0.0",
-  "homepage": "https://vite-theme-party.netlify.app/",
+  "homepage": "https://vite-theme-party.netlify.app",
   "author": "Ethan G",
   "license": "MIT",
   "type": "module",
+  "private": true,
+  "browserslist": [
+    "defaults"
+  ],
   "keywords": [
     "vite",
     "theme",
     "postcss",
     "cssnano"
-  ],
-  "private": true,
-  "browserslist": [
-    "defaults"
   ],
   "scripts": {
     "dev": "vite",

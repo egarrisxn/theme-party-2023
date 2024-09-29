@@ -1,243 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://vite-theme-party.netlify.app/ogimage.png"
+    />
+    <meta property="og:title" content="Vite | Theme Party" />
+    <meta property="og:description" content="Get creative with yout theme!!" />
+    <meta property="og:url" content="https://vite-theme-party.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vite | Theme Party" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vite | Theme Party" />
+    <meta name="twitter:description" content="Get creative with yout theme!!" />
+    <meta
+      name="twitter:image"
+      content="https://vite-theme-party.netlify.app/ogimage.png"
+    />
+    <meta name="description" content="Get creative with yout theme!!" />
+    <meta name="author" content="Ethan G." />
+    <meta
+      name="keywords"
+      content="HTML, JavaScript, CSS, Vite, Vanilla, Theme"
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Vite | Theme Party</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js" type="module"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Title -->
-  <title>Vite | Theme Party</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-  <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="./style.css">
-  <!-- Preconnect hints for Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Link to Roboto font with specific weights -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-  <!-- Link to external JavaScript file -->
-  <script src="./main.js" type="module"></script>
-</head>
+  <body>
+    <!-- Background image -->
+    <img src="/images/bg1.png" alt="background" class="background" />
+    <main>
+      <header>
+        <h1>Theme Party!</h1>
+      </header>
+      <div class="container">
+        <!-- Playground -->
+        <div class="playground">
+          <section class="column">
+            <!-- Toggle switches for the playground -->
+            <div class="switch-wrapper">
+              <input type="checkbox" id="sound" name="sound" />
+              <label for="sound" class="label">Toggle Sound</label>
+              <div class="switch">
+                <span>Sound Off</span>
+                <div class="thumb"></div>
+                <span>Sound On</span>
+              </div>
+            </div>
+            <div class="switch-wrapper">
+              <input type="checkbox" id="motion" name="motion" />
+              <label for="motion" class="label">Toggle Motion</label>
+              <div class="switch">
+                <span>Motion Off</span>
+                <div class="thumb"></div>
+                <span>Motion On</span>
+              </div>
+            </div>
+            <div class="switch-wrapper">
+              <input type="checkbox" id="round" name="round" />
+              <label for="round" class="label">Toggle Round</label>
+              <div class="switch">
+                <span>Squared</span>
+                <div class="thumb"></div>
+                <span>Rounded</span>
+              </div>
+            </div>
+          </section>
+          <section class="column">
+            <!-- Radio buttons for selecting website theme -->
+            <fieldset class="radio-wrapper">
+              <legend>Website Theme</legend>
+              <div class="radio">
+                <input type="radio" name="theme" id="system" />
+                <div class="check"></div>
+                <label for="system">System</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="theme" id="light" />
+                <div class="check"></div>
+                <label for="light">Light</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="theme" id="dark" />
+                <div class="check"></div>
+                <label for="dark">Dark</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="theme" id="one" />
+                <div class="check"></div>
+                <label for="one">One</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="theme" id="two" />
+                <div class="check"></div>
+                <label for="two">Two</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="theme" id="three" />
+                <div class="check"></div>
+                <label for="three">Three</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="theme" id="four" />
+                <div class="check"></div>
+                <label for="four">Four</label>
+              </div>
+            </fieldset>
+            <!-- Radio buttons for selecting custom accent color -->
+            <fieldset class="radio-wrapper">
+              <legend>Custom Accent</legend>
+              <div class="radio">
+                <input type="radio" name="accent" id="primary" />
+                <div class="check"></div>
+                <label for="primary">Primary</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="accent" id="accent1" />
+                <div class="check"></div>
+                <label for="accent1">Accent 1</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="accent" id="accent2" />
+                <div class="check"></div>
+                <label for="accent2">Accent 2</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="accent" id="accent3" />
+                <div class="check"></div>
+                <label for="accent2">Accent 3</label>
+              </div>
+            </fieldset>
+          </section>
+        </div>
+        <!-- Example -->
+        <div class="example">
+          <div class="background-wrapper">
+            <section class="column">
+              <!-- Example using data-background -->
+              <div class="txt-example" data-color="primary">Primary</div>
+              <div class="txt-example" data-color="accent1">Accent 1</div>
+              <div class="txt-example" data-color="accent2">Accent 2</div>
+              <div class="txt-example" data-color="accent3">Accent 3</div>
+            </section>
+            <section class="column">
+              <!-- Example using data-background -->
+              <div class="bg-example" data-background="primary">Primary</div>
+              <div class="bg-example" data-background="accent1">Accent 1</div>
+              <div class="bg-example" data-background="accent2">Accent 2</div>
+              <div class="bg-example" data-background="accent3">Accent 3</div>
+            </section>
+          </div>
 
-<body>
-  <!-- Background image -->
-  <img src="/images/bg1.png" alt="background" class="background">
-  <main>
-    <header>
-      <h1>
-        Theme Party!
-      </h1>
-    </header>
-    <div class="container">
-      <!-- Playground -->
-      <div class="playground">
-        <section class="column">
-          <!-- Toggle switches for the playground -->
-          <div class="switch-wrapper">
-            <input type="checkbox" id="sound" name="sound">
-            <label for="sound" class="label">Toggle Sound</label>
-            <div class="switch">
-              <span>Sound Off</span>
-              <div class="thumb"></div>
-              <span>Sound On</span>
-            </div>
+          <div class="glass-wrapper">
+            <section class="column">
+              <!-- Example using data-background -->
+              <div class="txt-example" data-color="primary">Primary</div>
+              <div class="txt-example" data-color="accent1">Accent 1</div>
+              <div class="txt-example" data-color="accent2">Accent 2</div>
+              <div class="txt-example" data-color="accent3">Accent 3</div>
+            </section>
+            <section class="column">
+              <!-- Example using data-background -->
+              <div class="bg-example" data-background="primary">Primary</div>
+              <div class="bg-example" data-background="accent1">Accent 1</div>
+              <div class="bg-example" data-background="accent2">Accent 2</div>
+              <div class="bg-example" data-background="accent3">Accent 3</div>
+            </section>
           </div>
-          <div class="switch-wrapper">
-            <input type="checkbox" id="motion" name="motion">
-            <label for="motion" class="label">Toggle Motion</label>
-            <div class="switch">
-              <span>Motion Off</span>
-              <div class="thumb"></div>
-              <span>Motion On</span>
-            </div>
+
+          <div class="no-bg-wrapper">
+            <section class="column">
+              <!-- Example using data-background -->
+              <div class="txt-example" data-color="primary">Primary</div>
+              <div class="txt-example" data-color="accent1">Accent 1</div>
+              <div class="txt-example" data-color="accent2">Accent 2</div>
+              <div class="txt-example" data-color="accent3">Accent 3</div>
+            </section>
+            <section class="column">
+              <!-- Example using data-background -->
+              <div class="bg-example" data-background="primary">Primary</div>
+              <div class="bg-example" data-background="accent1">Accent 1</div>
+              <div class="bg-example" data-background="accent2">Accent 2</div>
+              <div class="bg-example" data-background="accent3">Accent 3</div>
+            </section>
           </div>
-          <div class="switch-wrapper">
-            <input type="checkbox" id="round" name="round">
-            <label for="round" class="label">Toggle Round</label>
-            <div class="switch">
-              <span>Squared</span>
-              <div class="thumb"></div>
-              <span>Rounded</span>
-            </div>
-          </div>
-        </section>
-        <section class="column">
-          <!-- Radio buttons for selecting website theme -->
-          <fieldset class="radio-wrapper">
-            <legend>Website Theme</legend>
-            <div class="radio">
-              <input type="radio" name="theme" id="system">
-              <div class="check"></div>
-              <label for="system">System</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="theme" id="light">
-              <div class="check"></div>
-              <label for="light">Light</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="theme" id="dark">
-              <div class="check"></div>
-              <label for="dark">Dark</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="theme" id="one">
-              <div class="check"></div>
-              <label for="one">One</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="theme" id="two">
-              <div class="check"></div>
-              <label for="two">Two</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="theme" id="three">
-              <div class="check"></div>
-              <label for="three">Three</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="theme" id="four">
-              <div class="check"></div>
-              <label for="four">Four</label>
-            </div>
-          </fieldset>
-          <!-- Radio buttons for selecting custom accent color -->
-          <fieldset class="radio-wrapper">
-            <legend>Custom Accent</legend>
-            <div class="radio">
-              <input type="radio" name="accent" id="primary">
-              <div class="check"></div>
-              <label for="primary">Primary</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="accent" id="accent1">
-              <div class="check"></div>
-              <label for="accent1">Accent 1</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="accent" id="accent2">
-              <div class="check"></div>
-              <label for="accent2">Accent 2</label>
-            </div>
-            <div class="radio">
-              <input type="radio" name="accent" id="accent3">
-              <div class="check"></div>
-              <label for="accent2">Accent 3</label>
-            </div>
-          </fieldset>
-        </section>
+        </div>
       </div>
-      <!-- Example -->
-      <div class="example">
-
-        <div class="background-wrapper">
-          <section class="column">
-            <!-- Example using data-background -->
-            <div class="txt-example" data-color="primary">
-              Primary
-            </div>
-            <div class="txt-example" data-color="accent1">
-              Accent 1
-            </div>
-            <div class="txt-example" data-color="accent2">
-              Accent 2
-            </div>
-            <div class="txt-example" data-color="accent3">
-              Accent 3
-            </div>
-          </section>
-          <section class="column">
-            <!-- Example using data-background -->
-            <div class="bg-example" data-background="primary">
-              Primary
-            </div>
-            <div class="bg-example" data-background="accent1">
-              Accent 1
-            </div>
-            <div class="bg-example" data-background="accent2">
-              Accent 2
-            </div>
-            <div class="bg-example" data-background="accent3">
-              Accent 3
-            </div>
-          </section>
-
-        </div>
-
-        <div class="glass-wrapper">
-          <section class="column">
-            <!-- Example using data-background -->
-            <div class="txt-example" data-color="primary">
-              Primary
-            </div>
-            <div class="txt-example" data-color="accent1">
-              Accent 1
-            </div>
-            <div class="txt-example" data-color="accent2">
-              Accent 2
-            </div>
-            <div class="txt-example" data-color="accent3">
-              Accent 3
-            </div>
-          </section>
-          <section class="column">
-            <!-- Example using data-background -->
-            <div class="bg-example" data-background="primary">
-              Primary
-            </div>
-            <div class="bg-example" data-background="accent1">
-              Accent 1
-            </div>
-            <div class="bg-example" data-background="accent2">
-              Accent 2
-            </div>
-            <div class="bg-example" data-background="accent3">
-              Accent 3
-            </div>
-          </section>
-
-        </div>
-
-        <div class="no-bg-wrapper">
-          <section class="column">
-            <!-- Example using data-background -->
-            <div class="txt-example" data-color="primary">
-              Primary
-            </div>
-            <div class="txt-example" data-color="accent1">
-              Accent 1
-            </div>
-            <div class="txt-example" data-color="accent2">
-              Accent 2
-            </div>
-            <div class="txt-example" data-color="accent3">
-              Accent 3
-            </div>
-          </section>
-          <section class="column">
-            <!-- Example using data-background -->
-            <div class="bg-example" data-background="primary">
-              Primary
-            </div>
-            <div class="bg-example" data-background="accent1">
-              Accent 1
-            </div>
-            <div class="bg-example" data-background="accent2">
-              Accent 2
-            </div>
-            <div class="bg-example" data-background="accent3">
-              Accent 3
-            </div>
-          </section>
-
-        </div>
-
-      </div>
-    </div>
-  </main>
-  <!-- Audio elements for sound effects -->
-  <audio src="/sounds/check.mp3" id="audio-check" preload="none"></audio>
-  <audio src="/sounds/toggle.mp3" id="audio-toggle" preload="none"></audio>
-</body>
-
+    </main>
+    <!-- Audio elements for sound effects -->
+    <audio src="/sounds/check.mp3" id="audio-check" preload="none"></audio>
+    <audio src="/sounds/toggle.mp3" id="audio-toggle" preload="none"></audio>
+  </body>
 </html>
