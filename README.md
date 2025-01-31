@@ -1,8 +1,8 @@
-# Vite Theme Party
+# Theme Party 2023
 
 _Explore, mix, and match themes in this dynamic theme playground powered by Vite!_
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/vite-theme-party) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/vite-theme-party)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/theme-party-2023) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/theme-party-2023)
 
 ## Description
 
