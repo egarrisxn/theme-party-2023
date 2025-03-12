@@ -1,4 +1,4 @@
-# Theme Party 2023
+# Theme Party 2024
 
 _Explore, mix, and match themes in this dynamic theme playground powered by Vite!_
 
