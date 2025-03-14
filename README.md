@@ -1,6 +1,6 @@
 # Theme Party 2024
 
-_Explore, mix, and match themes in this dynamic theme playground powered by Vite!_
+![theme-party](https://github.com/egarrisxn/vite-theme-party/assets/126130230/6379e181-67d9-4b1d-89dc-6c249586defa)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/theme-party-2023) ![GitHub last commit](https://img.shields.io/github/last-commit/egarrisxn/theme-party-2023)
 
@@ -9,8 +9,6 @@ _Explore, mix, and match themes in this dynamic theme playground powered by Vite
 Vite Theme Party is a versatile theme playground application that allows you to experiment with different themes and see how they interact with each other. Built using Vite for fast development, HTML5, CSS3, and JavaScript, it offers an interactive environment where you can switch between various themes seamlessly.
 
 Test it out for yourself: [Vite Theme Party Live Demo](https://vite-theme-party.netlify.app/)
-
-![theme-party](https://github.com/egarrisxn/vite-theme-party/assets/126130230/6379e181-67d9-4b1d-89dc-6c249586defa)
 
 ## Technologies Used
 
